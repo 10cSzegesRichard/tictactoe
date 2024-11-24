@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tictac.js">
+</head>
+<body>
+  <div class="menu">
+    <button onclick="startGame('player-vs-player')">Két játékos</button>
+    <button onclick="startGame('player-vs-computer')">Játékos vs. Számítógép</button>
+  </div>
+  <div class="game-container" style="display:none;">
+    <div class="board" id="board"></div>
+    <div class="result" id="result"></div>
+    <button class="reset" id="reset" onclick="startGame()">Új játék</button>
+  </div>
+  <script src="tictac.js"></script>
+</body>
+</html>
